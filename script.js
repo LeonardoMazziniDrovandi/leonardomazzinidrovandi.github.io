@@ -1,17 +1,14 @@
-// Gestione del menu mobile (Hamburger Menu)
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 
 burger.addEventListener('click', () => {
-    // Toggle Nav
+
     nav.classList.toggle('nav-active');
     
-    // Burger Animation
     burger.classList.toggle('toggle');
 });
 
-// Chiusura del menu mobile quando si clicca un link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         if(nav.classList.contains('nav-active')){
@@ -21,7 +18,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Smooth Scrolling per i link di ancoraggio
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
