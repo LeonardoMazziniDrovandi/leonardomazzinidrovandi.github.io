@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonardo Mazzini Drovandi - Portfolio</title>
+    <title>Leonardo Mazzini Drovandi — Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
 
+    <!-- ───── NAVIGATION ───── -->
     <header>
-        <div class="logo">Leonardo Mazzini Drovandi</div>
+        <div class="logo">LMD<span>.</span></div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -28,60 +32,87 @@
         </nav>
     </header>
 
+    <!-- ───── HERO ───── -->
     <section id="home" class="hero">
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+        <div class="hero-grid-lines"></div>
+
         <div class="hero-content">
-            <h1>Leonardo Mazzini Drovandi</h1>
-            <h2>Studente ITS - Sviluppatore web junior</h2>
-            <p>Studente del corso ITS EQF 5 in sviluppo software e applicazioni web. Appassionato di tecnologie moderne e pronto a entrare nel mondo del lavoro.</p>
-            <div class="cta-buttons">
-                <a href="#progetti" class="btn btn-primary">Vedi progetti</a>
-                <a href="CV/leonardomazzinidrovandi.pdf" class="btn btn-secondary" target="_blank">Scarica CV</a><br>
-                <a href="CV/letterapresentazione.pdf" class="btn btn-secondary" target="_blank">Scarica lettera di presentazione</a>
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Disponibile per opportunità
             </div>
+            <h1>Leonardo<br><span class="highlight">Mazzini Drovandi</span></h1>
+            <p class="hero-subtitle">Sviluppatore Web Junior · ITS EQF 5</p>
+            <p class="hero-desc">Studente del corso ITS in sviluppo software e applicazioni web. Appassionato di tecnologie moderne, design e cybersecurity. Pronto a portare valore al tuo team.</p>
+
+            <div class="tags">
+                <span>Frontend</span>
+                <span>Backend</span>
+                <span>Cybersecurity</span>
+                <span>UI/Design</span>
+                <span>Open Source</span>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#progetti" class="btn btn-primary">Vedi i miei progetti</a>
+                <a href="CV/leonardomazzinidrovandi.pdf" class="btn btn-secondary" target="_blank">Scarica CV</a>
+                <a href="CV/letterapresentazione.pdf" class="btn btn-secondary" target="_blank">Lettera di presentazione</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            scroll
         </div>
     </section>
 
-    <section id="chi-sono">
+    <!-- ───── CHI SONO ───── -->
+    <section id="chi-sono" class="bg-surface">
+        <p class="section-label">Profilo</p>
         <h2>Chi sono</h2>
         <p class="section-subtitle">La mia passione per lo sviluppo web e il percorso di crescita professionale</p>
-        
-        <div class="grid-2">
-            <div class="card">
+
+        <div class="about-grid">
+            <div class="glass-card reveal">
                 <h3>Il mio percorso</h3>
                 <ul class="percorso-list">
                     <li>
-                        <img src="images/icon1.png" alt="icon1" style="width: 32px; height: 32px;">
+                        <img src="images/icon1.png" alt="icon1">
                         <div class="percorso-text">
-                            <strong>Perito informatico</strong><br>
-                            I.T.T.S. "Silvano Fedi - Enrico Fermi" - luglio 2024
+                            <strong>Perito informatico</strong>
+                            I.T.T.S. "Silvano Fedi - Enrico Fermi" — luglio 2024
                         </div>
                     </li>
                     <li>
-                        <img src="images/icon2.png" alt="icon2" style="width: 32px; height: 32px;">
+                        <img src="images/icon2.png" alt="icon2">
                         <div class="percorso-text">
-                            <strong>ITS EQF 5</strong><br>
-                            Sviluppo software e app web - novembre 2024 (in corso)
+                            <strong>ITS EQF 5</strong>
+                            Sviluppo software e app web — novembre 2024 (in corso)
                         </div>
                     </li>
                     <li>
-                        <img src="images/icon3.png" alt="icon3" style="width: 32px; height: 32px;">
+                        <img src="images/icon3.png" alt="icon3">
                         <div class="percorso-text">
-                            <strong>Esperienze</strong><br>
-                            Erasmus+ lavorativo in ambito IT presso GG.machines.ie (Irlanda)
+                            <strong>Erasmus+ lavorativo</strong>
+                            Ambito IT presso GG.machines.ie — Irlanda
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="card">
-                <h3>I miei interessi</h3>
-                
+
+            <div class="glass-card reveal reveal-delay-2">
+                <h3>Interessi & Soft skills</h3>
+
                 <div class="interessi-list">
-                    <div class="interesse-item">Sviluppo frontend</div>
-                    <div class="interesse-item">Processing</div>
-                    <div class="interesse-item">Grafica digitale</div>
-                    <div class="interesse-item">Programmazione creativa</div>
-                    <div class="interesse-item">Web development</div>
-                    <div class="interesse-item">Design visivo</div>
+                    <span class="interesse-item">Sviluppo frontend</span>
+                    <span class="interesse-item">Processing</span>
+                    <span class="interesse-item">Grafica digitale</span>
+                    <span class="interesse-item">Programmazione creativa</span>
+                    <span class="interesse-item">Web development</span>
+                    <span class="interesse-item">Design visivo</span>
                 </div>
 
                 <div class="soft-skills-box">
@@ -97,197 +128,221 @@
         </div>
     </section>
 
-    <section id="competenze" class="bg-light">
+    <!-- ───── COMPETENZE ───── -->
+    <section id="competenze">
+        <p class="section-label">Stack tecnico</p>
         <h2>Competenze tecniche</h2>
         <p class="section-subtitle">Le tecnologie che sto imparando e utilizzando nei miei progetti</p>
-        
-        <div class="grid-3">
-            <div class="skill-box">
+
+        <div class="skills-grid">
+            <div class="skill-box reveal">
                 <h3 class="skill-box-title">Frontend</h3>
-                
                 <div class="skill-item">
-                    <span class="skill-name">HTML5 & CSS3</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+                    <div class="skill-name"><span>HTML5 &amp; CSS3</span><span class="pct">95%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="95"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">JavaScript</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+                    <div class="skill-name"><span>JavaScript</span><span class="pct">85%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="85"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Processing</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 65%;"></div></div>
+                    <div class="skill-name"><span>Processing</span><span class="pct">65%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="65"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Grafica digitale</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 60%;"></div></div>
+                    <div class="skill-name"><span>Grafica digitale</span><span class="pct">60%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="60"></div></div>
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box reveal reveal-delay-1">
                 <h3 class="skill-box-title">Backend</h3>
-                
                 <div class="skill-item">
-                    <span class="skill-name">Node.js</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 59%;"></div></div>
+                    <div class="skill-name"><span>Python</span><span class="pct">80%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="80"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Java</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 70%;"></div></div>
+                    <div class="skill-name"><span>PHP</span><span class="pct">79%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="79"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">PHP</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 79%;"></div></div>
+                    <div class="skill-name"><span>Java</span><span class="pct">70%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="70"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Python</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 80%;"></div></div>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <h3 class="skill-box-title">Database & Tools</h3>
-                
-                <div class="skill-item">
-                    <span class="skill-name">MySQL</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">MariaDB</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 75%;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Git & GitHub</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">VS Code</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+                    <div class="skill-name"><span>Node.js</span><span class="pct">59%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="59"></div></div>
                 </div>
             </div>
 
-            <div class="skill-box">
-                <h3 class="skill-box-title">Cloud & Web Hosting</h3>
-                
+            <div class="skill-box reveal reveal-delay-2">
+                <h3 class="skill-box-title">Database &amp; Tools</h3>
                 <div class="skill-item">
-                    <span class="skill-name">DNS</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
+                    <div class="skill-name"><span>VS Code</span><span class="pct">95%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="95"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Dominio</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 88%;"></div></div>
+                    <div class="skill-name"><span>Git &amp; GitHub</span><span class="pct">90%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="90"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Hosting</span>
-                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+                    <div class="skill-name"><span>MySQL</span><span class="pct">85%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="85"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>MariaDB</span><span class="pct">75%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="75"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-box reveal reveal-delay-3">
+                <h3 class="skill-box-title">Cloud &amp; Hosting</h3>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Hosting</span><span class="pct">95%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="95"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>DNS</span><span class="pct">90%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Dominio</span><span class="pct">88%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" data-width="88"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="progetti">
+    <!-- ───── PROGETTI ───── -->
+    <section id="progetti" class="bg-surface">
+        <p class="section-label">Lavori</p>
         <h2>Progetti personali</h2>
-        <p class="section-subtitle">Progetti sviluppati durante il mio percorso formativo e nel tempo libero</p>
-        
-        <div class="grid-2">
-            
-            <div class="project-card">
-                <img src="images/progetto1.png" alt="Progetto IntegrityTransfer" class="project-img">
-                
+        <p class="section-subtitle">Progetti sviluppati durante il percorso formativo e nel tempo libero</p>
+
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-img-wrap">
+                    <img src="images/progetto1.png" alt="IntegrityTransfer" class="project-img">
+                    <div class="project-img-overlay"></div>
+                </div>
                 <div class="project-content">
-                    <h3>Progetto IntegrityTransfer</h3>
+                    <h3>IntegrityTransfer</h3>
                     <p>Applicazione per testare la trasmissione sicura dei file tra utenti, con verifica automatica dell'integrità dei dati tramite algoritmo hash.</p>
-                    <small class="tech-stack">Java • Hashing • Sicurezza</small>
-                    <a href="https://github.com/LeonardoMazziniDrovandi/IntegrityTransfer" class="btn-github" target="_blank">GitHub</a>
+                    <div class="tech-stack">
+                        <span>Java</span><span>Hashing</span><span>Sicurezza</span>
+                    </div>
+                    <a href="https://github.com/LeonardoMazziniDrovandi/IntegrityTransfer" class="btn-github" target="_blank">↗ GitHub</a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <img src="images/progetto2.png" alt="Progetto Duck Hunt" class="project-img">
-                
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-img-wrap">
+                    <img src="images/progetto2.png" alt="Duck Hunt" class="project-img">
+                    <div class="project-img-overlay"></div>
+                </div>
                 <div class="project-content">
-                    <h3>Progetto Duck Hunt (Processing)</h3>
-                    <p>Videogioco interattivo ispirato al classico Duck Hunt, realizzato con Processing. Include gestione input, animazioni e rilevamento collisioni.</p>
-                    <small class="tech-stack">Processing • Java • Game dev • Grafica 2D • Interazione</small>
-                    <a href="https://github.com/LeonardoMazziniDrovandi/DuckHunt" class="btn-github" target="_blank">GitHub</a>
+                    <h3>Duck Hunt (Processing)</h3>
+                    <p>Videogioco interattivo ispirato al classico Duck Hunt. Include gestione input, animazioni e rilevamento collisioni.</p>
+                    <div class="tech-stack">
+                        <span>Processing</span><span>Java</span><span>Game dev</span><span>Grafica 2D</span>
+                    </div>
+                    <a href="https://github.com/LeonardoMazziniDrovandi/DuckHunt" class="btn-github" target="_blank">↗ GitHub</a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <img src="images/progetto3.png" alt="Progetto Labirinto 3D" class="project-img">
-                
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-img-wrap">
+                    <img src="images/progetto3.png" alt="Labirinto 3D" class="project-img">
+                    <div class="project-img-overlay"></div>
+                </div>
                 <div class="project-content">
-                    <h3>Progetto Labirinto 3D (Processing)</h3>
-                    <p>Gioco 3D in prima persona sviluppato in Processing. Il labirinto viene generato da file CSV configurabili e include movimento, interazione e gestione di materiali.</p>
-                    <small class="tech-stack">Processing • Java • 3D graphics • Game dev • CSV parsing</small>
-                    <a href="https://github.com/LeonardoMazziniDrovandi/Labirinto" class="btn-github" target="_blank">GitHub</a>
+                    <h3>Labirinto 3D (Processing)</h3>
+                    <p>Gioco 3D in prima persona. Il labirinto viene generato da file CSV configurabili, con movimento, interazione e gestione materiali.</p>
+                    <div class="tech-stack">
+                        <span>Processing</span><span>Java</span><span>3D graphics</span><span>CSV parsing</span>
+                    </div>
+                    <a href="https://github.com/LeonardoMazziniDrovandi/Labirinto" class="btn-github" target="_blank">↗ GitHub</a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <img src="images/progetto4.png" alt="Progetto Security Awareness" class="project-img">
-                
+            <div class="project-card reveal reveal-delay-3">
+                <div class="project-img-wrap">
+                    <img src="images/progetto4.png" alt="Security Awareness" class="project-img">
+                    <div class="project-img-overlay"></div>
+                </div>
                 <div class="project-content">
-                    <h3>Progetto Security Awareness Web Demo</h3>
+                    <h3>Security Awareness Web Demo</h3>
                     <p>Sito demo per simulare il furto di credenziali via phishing e codice JS offuscato. Progetto educativo di ethical hacking.</p>
-                    <small class="tech-stack">HTML5 • CSS3 • JavaScript • Phishing • Ethical hacking</small>
-                    <a href="https://github.com/LeonardoMazziniDrovandi/exampleSite" class="btn-github" target="_blank">GitHub</a>
+                    <div class="tech-stack">
+                        <span>HTML5</span><span>JavaScript</span><span>Phishing</span><span>Ethical hacking</span>
+                    </div>
+                    <a href="https://github.com/LeonardoMazziniDrovandi/exampleSite" class="btn-github" target="_blank">↗ GitHub</a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <img src="images/internet.png" alt="Sito aziendale MAF INFORMATICA" class="project-img">
-                
+            <div class="project-card reveal">
+                <div class="project-img-wrap">
+                    <img src="images/internet.png" alt="MAF Informatica" class="project-img">
+                    <div class="project-img-overlay"></div>
+                </div>
                 <div class="project-content">
                     <h3>Sito aziendale "MAF Informatica"</h3>
-                    <p>Acquisto, configurazione e sviluppo in modo intero del sito <br>( www.mafinformatica.info ).</p>
-                    <small class="tech-stack">HTML5 • SQL • CSS3 • JavaScript • PHP • Configurazione Hosting & Dominio & DNS</small>
-                    <a href="https://www.mafinformatica.info" class="btn-github" target="_blank">VISITA</a>
+                    <p>Acquisto, configurazione e sviluppo completo del sito web aziendale con gestione hosting, dominio e DNS.</p>
+                    <div class="tech-stack">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>SQL</span>
+                    </div>
+                    <a href="https://www.mafinformatica.info" class="btn-github" target="_blank">↗ Visita il sito</a>
                 </div>
             </div>
-			
-			<div class="project-card">
-                <img src="images/insiemesipuo.png" alt="Sito aziendale MAF INFORMATICA" class="project-img">
-                
+
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-img-wrap">
+                    <img src="images/insiemesipuo.png" alt="Insieme si può APS" class="project-img">
+                    <div class="project-img-overlay"></div>
+                </div>
                 <div class="project-content">
-                    <h3>Sito associazione "Insieme si può APS"</h3>
-                    <p>Acquisto dominio, configurazione dns e sviluppo sito web e collegamento tramite GitHub pages <br>( www.insiemesipuo25.it ).</p>
-                    <small class="tech-stack">HTML5 • SQL • CSS3 • JavaScript • PHP • Configurazione Hosting & Dominio & DNS</small>
-                    <a href="https://www.insiemesipuo25.it" class="btn-github" target="_blank">VISITA</a>
+                    <h3>Sito "Insieme si può APS"</h3>
+                    <p>Acquisto dominio, configurazione DNS e sviluppo sito web con deploy tramite GitHub Pages per associazione no-profit.</p>
+                    <div class="tech-stack">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span>
+                    </div>
+                    <a href="https://www.insiemesipuo25.it" class="btn-github" target="_blank">↗ Visita il sito</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section id="formazione" class="bg-light">
-        <h2>Formazione - Certificazioni</h2>
+    <!-- ───── FORMAZIONE ───── -->
+    <section id="formazione">
+        <p class="section-label">Crescita</p>
+        <h2>Formazione &amp; Certificazioni</h2>
         <p class="section-subtitle">Il mio percorso di apprendimento e crescita professionale</p>
-        
-        <div class="grid-3">
-            <div class="edu-card">
-                <img src="images/icon2.png" alt="Icona ITS" class="edu-icon">
-                <h3 class="edu-title">ITS EQF 5 – System & network administration</h3>
+
+        <div class="edu-grid">
+            <div class="edu-card reveal">
+                <img src="images/icon2.png" alt="ITS" class="edu-icon">
+                <h3 class="edu-title">ITS EQF 5 – System &amp; network administration</h3>
                 <p class="edu-institution">ITS PRODIGI</p>
-                <p class="edu-date">Novembre 2024 - in corso</p>
-                <p class="edu-desc">Corso biennale post-diploma focalizzato su amministrazione di sistemi e reti, cybersecurity, virtualizzazione, automazione e gestione dell'infrastruttura IT.</p>
-                
+                <p class="edu-date">Novembre 2024 — in corso</p>
+                <p class="edu-desc">Corso biennale post-diploma su amministrazione di sistemi e reti, cybersecurity, virtualizzazione, automazione e gestione dell'infrastruttura IT.</p>
                 <div class="edu-tags">
                     <span class="edu-tag">Windows/Linux</span>
                     <span class="edu-tag">Virtualizzazione</span>
-                    <span class="edu-tag">Hosting & Cloud</span> 
+                    <span class="edu-tag">Hosting &amp; Cloud</span>
                     <span class="edu-tag">Cybersecurity</span>
                     <span class="edu-tag">Database</span>
                     <span class="edu-tag">Reti</span>
                 </div>
             </div>
 
-            <div class="edu-card">
-                <img src="images/icon1.png" alt="Icona scuola" class="edu-icon">
-                <h3 class="edu-title">Perito informatico</h3>
-                <p class="edu-institution">Istituto Tecnico Tecnologico Statale "Silvano Fedi - Enrico Fermi"</p>
-                <p class="edu-date">2019 - luglio 2024</p>
-                <p class="edu-desc">Diploma di perito informatico con specializzazione in programmazione, reti e sistemi informatici.</p>
-                
+            <div class="edu-card reveal reveal-delay-1">
+                <img src="images/icon1.png" alt="Scuola" class="edu-icon">
+                <h3 class="edu-title">Diploma di Perito informatico</h3>
+                <p class="edu-institution">I.T.T.S. "Silvano Fedi - Enrico Fermi"</p>
+                <p class="edu-date">2019 — luglio 2024</p>
+                <p class="edu-desc">Diploma con specializzazione in programmazione, reti e sistemi informatici.</p>
                 <div class="edu-tags">
                     <span class="edu-tag">Programmazione</span>
                     <span class="edu-tag">Sistemi</span>
@@ -297,49 +352,50 @@
                 </div>
             </div>
 
-            <div class="edu-card">
-                <img src="images/icon4.png" alt="Icona certificati" class="edu-icon">
+            <div class="edu-card reveal reveal-delay-2">
+                <img src="images/icon4.png" alt="Certificati" class="edu-icon">
                 <h3 class="edu-title">Certificazioni online</h3>
 
                 <div class="cert-box">
-                    AI-Powered Performance Ads Certification <strong>Google</strong>
-                    <span>Esperienza nella creazione di annunci performance guidati dall’IA. - 2026</span>
-                    <a href="certifications/CertificazioneAI.pdf" class="btn-github" target="_blank">CERTIFICAZIONE PDF</a>
+                    <strong>AI-Powered Performance Ads Certification — Google</strong>
+                    <span>Esperienza nella creazione di annunci performance guidati dall'IA. — 2026</span>
+                    <a href="certifications/CertificazioneAI.pdf" class="btn-github" target="_blank" style="margin-top:4px;">↗ Certificazione PDF</a>
                 </div>
-
                 <div class="cert-box">
-                    Certificazione sugli annunci Shopping basati sull’IA <strong>Google</strong>
-                    <span>Competenze nell’uso dell’IA per ottimizzare le campagne Shopping. - 2026</span>
-                    <a href="certifications/CertificazioneMarketingAI.pdf" class="btn-github" target="_blank">CERTIFICAZIONE PDF</a>
+                    <strong>Shopping Ads AI Certification — Google</strong>
+                    <span>Competenze nell'uso dell'IA per ottimizzare campagne Shopping. — 2026</span>
+                    <a href="certifications/CertificazioneMarketingAI.pdf" class="btn-github" target="_blank" style="margin-top:4px;">↗ Certificazione PDF</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sistemi-operativi" class="bg-light">
+    <!-- ───── OS ───── -->
+    <section id="sistemi-operativi" class="bg-surface">
         <div class="os-section-header">
-            <h2 class="os-main-title">Sistemi operativi utilizzati</h2>
-            <p class="section-subtitle">I principali sistemi operativi che ho usato durante il percorso formativo e lavorativo, suddivisi per ambito</p>
+            <p class="section-label">Ambiente di lavoro</p>
+            <h2 class="os-main-title">Sistemi operativi</h2>
+            <p class="section-subtitle">I principali OS utilizzati durante il percorso formativo e lavorativo</p>
         </div>
 
-        <div class="grid-3">
-            <div class="os-card">
+        <div class="os-grid">
+            <div class="os-card reveal">
                 <div class="os-card-header">
-                    <h4>Desktop & client</h4>
-                    <img src="images/icon5.png" alt="Icona desktop" class="os-icon-img">
+                    <h4>Desktop &amp; Client</h4>
+                    <img src="images/icon5.png" alt="Desktop" class="os-icon-img">
                 </div>
                 <div class="os-list">
                     <div class="os-item">Windows 7 / 10 / 11</div>
-                    <div class="os-item">Puppy Linux & PXE client</div>
+                    <div class="os-item">Puppy Linux &amp; PXE client</div>
                     <div class="os-item">Ubuntu</div>
                     <div class="os-item">Tails OS</div>
                 </div>
             </div>
 
-            <div class="os-card">
+            <div class="os-card reveal reveal-delay-1">
                 <div class="os-card-header">
-                    <h4>Sicurezza & penetration testing</h4>
-                    <img src="images/icon6.png" alt="Icona sicurezza" class="os-icon-img">
+                    <h4>Sicurezza &amp; Pen Testing</h4>
+                    <img src="images/icon6.png" alt="Sicurezza" class="os-icon-img">
                 </div>
                 <div class="os-list">
                     <div class="os-item">Kali Linux</div>
@@ -348,10 +404,10 @@
                 </div>
             </div>
 
-            <div class="os-card">
+            <div class="os-card reveal reveal-delay-2">
                 <div class="os-card-header">
-                    <h4>Server & virtualizzazione</h4>
-                    <img src="images/icon7.png" alt="Icona server" class="os-icon-img">
+                    <h4>Server &amp; Virtualizzazione</h4>
+                    <img src="images/icon7.png" alt="Server" class="os-icon-img">
                 </div>
                 <div class="os-list">
                     <div class="os-item">Windows Server</div>
@@ -362,14 +418,24 @@
         </div>
     </section>
 
+    <!-- ───── FOOTER / CONTATTI ───── -->
     <footer id="contatti">
+        <p class="section-label" style="margin-bottom:0.8rem;">Parliamo</p>
         <h2>Contatti</h2>
-        <p>Sono sempre aperto a nuove opportunità e collaborazioni.</p>
-        <a href="https://www.linkedin.com/in/leonardo-mazzini-drovandi-532618333/" target="_blank" class="btn btn-primary">Inviami un messaggio su LinkedIn</a>
-        
+        <p>Sono aperto a nuove opportunità, collaborazioni e stage. Non esitare a contattarmi.</p>
+
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/leonardo-mazzini-drovandi-532618333/" target="_blank" class="btn btn-primary">
+                ↗ LinkedIn
+            </a>
+            <a href="CV/leonardomazzinidrovandi.pdf" target="_blank" class="btn btn-secondary">
+                Scarica CV
+            </a>
+        </div>
+
         <div class="footer-bottom">
             <p>&copy; 2026 Leonardo Mazzini Drovandi. Tutti i diritti riservati.</p>
-            <small>Studente ITS EQF 5 • Sviluppatore web junior • Appassionato di tecnologia</small>
+            <small>Studente ITS EQF 5 · Sviluppatore web junior · Appassionato di tecnologia</small>
         </div>
     </footer>
 
