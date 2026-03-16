@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Awareness Web Demo — Leonardo Mazzini Drovandi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ───── HEADER ───── -->
+    <header>
+        <a href="index.html" class="logo">LMD<span>.</span></a>
+    </header>
+
+    <!-- ───── MAIN ───── -->
+    <main>
+        <div class="container">
+            <!-- Back Button -->
+            <a href="index.html" class="back-button">← Torna alla home</a>
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>→</span>
+                <a href="index.html#progetti">Progetti</a>
+                <span>→</span>
+                <span>Security Awareness Web Demo</span>
+            </div>
+
+            <!-- Project Header -->
+            <div class="project-header">
+                <h1 class="project-title">Security Awareness Web Demo</h1>
+                <p class="project-subtitle">Un sito educativo e interattivo per sensibilizzare sui rischi di phishing e sul social engineering attraverso una simulazione realistica.</p>
+            </div>
+
+            <!-- Video Section -->
+            <div class="video-section">
+                <div class="video-container">
+                    <!-- Sostituisci 'demo-video.mp4' con il percorso del tuo file MP4 -->
+                    <video 
+                        controls 
+                        poster="images/internet.png"
+                        controlsList="nodownload"
+                    >
+                        <source src="video/progetto4.mp4" type="video/mp4">
+                        Il tuo browser non supporta il tag video. Perfavore aggiorna il browser.
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3>Demo del progetto</h3>
+                    <p>Guarda una dimostrazione completa del sito di Security Awareness. Puoi visualizzare il video in modalità normale o schermo intero utilizzando i controlli nella parte inferiore.</p>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="tech-section">
+                <h3>Stack Tecnologico</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Phishing Simulation</span>
+                    <span class="tech-tag">Ethical Hacking</span>
+                    <span class="tech-tag">UI/UX Design</span>
+                </div>
+            </div>
+
+            <!-- Project Description -->
+            <div class="description-section">
+                <h3>Descrizione del progetto</h3>
+                
+                <p><strong>Security Awareness Web</strong> è un sito demo educativo progettato per insegnare ai visitatori come riconoscere e prevenire attacchi di phishing e social engineering. Il progetto combina una formazione interattiva con esperienze simulate.</p>
+
+                <div class="features-list">
+                    <ul style="list-style: none;">
+                        <li>Simulazione realistica di attacchi di phishing</li>
+                        <li>Interfaccia intuitiva e responsive design</li>
+                        <li>Contenuti educativi su cybersecurity</li>
+                        <li>Progetto etico per scopi didattici</li>
+                        <li>Badge e tecnologie di sicurezza web</li>
+                    </ul>
+                </div>
+
+                <p>Questo progetto è stato sviluppato come parte della formazione in cybersecurity con l'obiettivo di sensibilizzare sulla sicurezza informatica in modo interattivo e coinvolgente.</p>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Competenze acquisite</h3>
+                <p>
+                    Durante lo sviluppo di questo progetto ho approfondito:
+                    <br>• Tecniche di phishing e social engineering
+                    <br>• Sviluppo di simulazioni web sicure ed etiche
+                    <br>• UI/UX design per applicazioni educative
+                    <br>• Best practices di sicurezza informatica
+                    <br>• Etica dell'ethical hacking e della cybersecurity
+                </p>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="button-group">
+                <a href="index.html#progetti" class="btn btn-primary">← Vedi altri progetti</a>
+                <a href="index.html#contatti" class="btn btn-secondary">Contattami</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- ───── FOOTER ───── -->
+    <footer>
+        <p>&copy; 2026 Leonardo Mazzini Drovandi. Tutti i diritti riservati.</p>
+        <p>Studente ITS EQF 5 · Sviluppatore web junior · Appassionato di tecnologia</p>
+    </footer>
+
+    <!-- ───── HEADER SCROLL EFFECT ───── -->
+    <script>
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 60);
+        });
+    </script>
+
+</body>
+</html>
