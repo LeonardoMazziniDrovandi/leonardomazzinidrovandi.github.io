@@ -572,6 +572,39 @@ footer > p { color: var(--text-muted); margin-bottom: 2rem; }
 
 .footer-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 3rem; }
 
+.contact-references {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.contact-link:hover {
+    color: var(--accent-bright);
+    background: rgba(99,102,241,0.08);
+}
+
+.contact-icon {
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
 .footer-bottom {
     border-top: 1px solid var(--border);
     padding-top: 2rem;
